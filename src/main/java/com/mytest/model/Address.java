@@ -24,6 +24,7 @@ public class Address implements Serializable {
     @JoinColumn(name = "id")
     private User user;
 
+    // Getter and Setter
 
     public long getId() {
         return id;

@@ -23,6 +23,7 @@ public class User implements Serializable {
     @PrimaryKeyJoinColumn
     private Address activated;
 
+    // Getter and Setter
 
     public Long getId() {
         return id;
