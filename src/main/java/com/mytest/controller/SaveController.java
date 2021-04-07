@@ -14,7 +14,8 @@ public class SaveController {
     ServiceJpa serviceJpa;
 
     @GetMapping(value = "/saveUser")
-    public String getJpa () {
+    public String save () {
+
 
         User user = new User();
         user.setId(1L);
