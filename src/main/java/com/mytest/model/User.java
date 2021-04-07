@@ -21,7 +21,7 @@ public class User implements Serializable {
 
     @OneToOne(mappedBy = "user")
     @PrimaryKeyJoinColumn
-    private Address activated;
+    private Address address;
 
     // Getter and Setter
 
@@ -41,11 +41,11 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public Address getActivated() {
-        return activated;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setActivated(Address activated) {
-        this.activated = activated;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
