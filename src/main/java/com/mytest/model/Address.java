@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "Address", schema = "TestKeyJoin")
+@Table(name = "address", schema = "TestKeyJoin")
 public class Address implements Serializable {
 
 
