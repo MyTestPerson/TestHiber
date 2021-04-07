@@ -13,16 +13,16 @@ public class HomeController {
     public String home () {
 
 
-//        List<Activated> userActivationsEntities = new ArrayList<>();
+//        List<Address> userActivationsEntities = new ArrayList<>();
 //
 //        userEntityRepository.findAllActive().forEach(userActivationsEntities::add);
 //
-//        Iterable<Activated> entities = userActivationsEntities.stream().filter(userActivationsEntity ->
+//        Iterable<Address> entities = userActivationsEntities.stream().filter(userActivationsEntity ->
 //                Instant.now().isAfter(userActivationsEntity.getUserDeletionDate())).collect(Collectors.toList());
 
 
 
-////        List<Activated> userActivationsEntities = new ArrayList<>();
+////        List<Address> userActivationsEntities = new ArrayList<>();
 //
 //        userEntityRepository.findAllActive().forEach(userActivationsEntity -> {
 //
@@ -37,13 +37,13 @@ public class HomeController {
 //                System.out.println("FALSE date1 меньше date2");
 //            }
 
-//            List<Activated> userActivationsEntities = new ArrayList<>();
+//            List<Address> userActivationsEntities = new ArrayList<>();
 //
 //
 //            userActivationsEntities.add(userActivationsEntity);
 //
-//            Stream<Activated> stream = userActivationsEntities.stream();
-//            stream.filter(Activated::isActive);
+//            Stream<Address> stream = userActivationsEntities.stream();
+//            stream.filter(Address::isActive);
 //
 //        });
 

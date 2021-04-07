@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "activated", schema = "hiber")
-public class Activated implements Serializable {
+@Table(name = "Address", schema = "TestKeyJoin")
+public class Address implements Serializable {
 
 
     @Id
@@ -15,9 +15,8 @@ public class Activated implements Serializable {
 
 
     @Basic
-    @Column(name = "active")
-    private String active;
-
+    @Column(name = "city")
+    private String city;
 
 
     @OneToOne
@@ -34,12 +33,12 @@ public class Activated implements Serializable {
         this.id = id;
     }
 
-    public String getActive() {
-        return active;
+    public String getCity() {
+        return city;
     }
 
-    public void setActive(String active) {
-        this.active = active;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public User getUser() {

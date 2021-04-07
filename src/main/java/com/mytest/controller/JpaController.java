@@ -1,7 +1,7 @@
 package com.mytest.controller;
 
 import com.mytest.jpa.ServiceJpa;
-import com.mytest.model.Activated;
+import com.mytest.model.Address;
 import com.mytest.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,14 +17,14 @@ public class JpaController {
     public String getJpa () {
 
         User user = new User();
-        user.setId(2L);
-        user.setUsername("Jack");
+        user.setId(1L);
+        user.setName("Michael Joseph Jackson");
         serviceJpa.saveUser(user);
 
-        Activated activated = new Activated();
-        activated.setId(2L);
-        activated.setActive("Active");
-        serviceJpa.saveActivated(activated);
+        Address address = new Address();
+        address.setId(1L);
+        address.setCity("Los Angeles");
+        serviceJpa.saveActivated(address);
 
         return "/jpa";
     }

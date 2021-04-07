@@ -3,9 +3,8 @@ package com.mytest.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
 @Entity
-@Table(name = "users", schema = "hiber")
+@Table(name = "user", schema = "TestKeyJoin")
 public class User implements Serializable {
 
 
@@ -16,15 +15,13 @@ public class User implements Serializable {
 
 
     @Basic
-    @Column(name = "username")
-    private String username;
+    @Column(name = "name")
+    private String name;
 
 
     @OneToOne(mappedBy = "user")
     @PrimaryKeyJoinColumn
-    private Activated activated;
-
-    // Getter and Setter
+    private Address activated;
 
 
     public Long getId() {
@@ -35,19 +32,19 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Activated getActivated() {
+    public Address getActivated() {
         return activated;
     }
 
-    public void setActivated(Activated activated) {
+    public void setActivated(Address activated) {
         this.activated = activated;
     }
 }
