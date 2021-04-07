@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Save User</title>
 </head>
-
 <body>
 
-<h1>Главная</h1>
-
+<br><br>
+Save User
 <br><br>
 
-<a href="/saveUser"><b>/saveUser</b></a><br>
+<a href="/"><b>/home</b></a><br>
+
 
 </body>
 </html>

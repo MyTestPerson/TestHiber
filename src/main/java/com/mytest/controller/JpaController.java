@@ -13,7 +13,7 @@ public class JpaController {
     @Autowired
     ServiceJpa serviceJpa;
 
-    @GetMapping(value = "/jpa")
+    @GetMapping(value = "/saveUser")
     public String getJpa () {
 
         User user = new User();
@@ -26,6 +26,6 @@ public class JpaController {
         address.setCity("Los Angeles");
         serviceJpa.saveActivated(address);
 
-        return "/jpa";
+        return "/saveUser";
     }
 }
