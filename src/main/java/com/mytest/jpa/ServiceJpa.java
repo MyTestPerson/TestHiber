@@ -15,7 +15,7 @@ public class ServiceJpa {
     SaveUser saveUser;
 
     @Autowired
-    SaveActivated saveActivated;
+    SaveAddress saveAddress;
 
 
 
@@ -24,8 +24,8 @@ public class ServiceJpa {
     }
 
 
-    public void saveActivated(Address activated) {
-        saveActivated.save(activated);
+    public void saveAddress(Address address) {
+        saveAddress.save(address);
     }
 
 

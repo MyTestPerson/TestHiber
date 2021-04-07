@@ -24,7 +24,7 @@ public class SaveController {
         Address address = new Address();
         address.setId(1L);
         address.setCity("Los Angeles");
-        serviceJpa.saveActivated(address);
+        serviceJpa.saveAddress(address);
 
         return "/saveUser";
     }
