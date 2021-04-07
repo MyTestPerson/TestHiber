@@ -62,7 +62,7 @@ public class RootConfig implements WebMvcConfigurer {
         properties.put(Environment.SHOW_SQL, "true");
         properties.put(Environment.FORMAT_SQL, "true");
         properties.put(Environment.DEFAULT_SCHEMA, "TestKeyJoin");
-        properties.put(Environment.HBM2DDL_AUTO, Action.CREATE_DROP); // Action.CREATE_DROP, Action.VALIDATE
+        properties.put(Environment.HBM2DDL_AUTO, Action.CREATE_DROP);
         properties.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
         properties.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 
