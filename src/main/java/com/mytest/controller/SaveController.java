@@ -17,12 +17,12 @@ public class SaveController {
     public String getJpa () {
 
         User user = new User();
-//        user.setId(1L);
+        user.setId(1L);
         user.setName("Michael Joseph Jackson");
         serviceJpa.saveUser(user);
 
         Address address = new Address();
-//        address.setId(1L);
+        address.setId(1L);
         address.setCity("Los Angeles");
         serviceJpa.saveActivated(address);
 
